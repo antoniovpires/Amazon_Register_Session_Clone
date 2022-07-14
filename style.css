@@ -1,6 +1,7 @@
 :root {
     --amazon-yellow: #f0c14b;
     --amazon-blue: #0066c0;
+    --hover: #c45500;
 }
 
 * {
@@ -15,13 +16,13 @@ header {
 }
 
 #amazon_logo {
-    width: 10%;
+    max-width: 12rem;
 }
 
 .register_div {
     border: 1px solid lightgrey;
     border-radius: 5px;
-    width: 17%;
+    max-width: 20rem;
     margin: auto;
     padding: 0rem 1rem;
 }
@@ -68,16 +69,37 @@ button {
     font-size: 0.75rem;
 }
 
-.terms a {
-    text-decoration: none;
-    color: var(--amazon-blue);
-}
-
 .if_login {
     font-size: 0.85rem;
 }
 
-.if_login a {
+.links_cc {
+    max-width: 45rem;
+    margin: auto;
+}
+
+.links_subdiv {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.links_subdiv h6 {
+    margin-bottom: 0rem;
+}
+
+.a_link {
     text-decoration: none;
     color: var(--amazon-blue);
+}
+
+.a_link:hover {
+    text-decoration: underline;
+    color: var(--hover);
+}
+
+.cc {
+    width: 17rem;
+    margin: auto;
+    color: grey;
 }
