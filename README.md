@@ -7,6 +7,10 @@
  - MySQL
  - RegEx
  
+ # How It Looks
+ 
+ ![Website Picture](https://github.com/antoniovpires/Amazon_Register_Session_Clone/blob/main/assets/readme/amazon_clone.PNG)
+ 
  ## The Functionalities
  
  ### Captain Obvious
