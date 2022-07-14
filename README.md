@@ -1,6 +1,11 @@
 # Amazon "Create a new account" Clone
 
- A clone I've developed to learn PHP and practice my "registration" skills!
+ A clone I've developed to learn PHP and practice my "registration" skills! In this project, I used:
+ - PHP
+ - JavaScript
+ - JQuery
+ - MySQL
+ - RegEx
  
  ## The Functionalities
  
