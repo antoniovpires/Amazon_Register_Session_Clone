@@ -14,11 +14,19 @@
     <div>
         <?php 
         if(isset($_POST['create'])){
-            $name = $_POST['name'];
+            $name = $_POST['username'];
             $email = $_POST['email'];
             $password = $_POST['password'];
 
-            $sql = "INSERT INTO users (firstname, lastname, email)"
+            $sql = "INSERT INTO users (name, email, password) VALUES(?,?,?)";
+            $stmtinsert = $db->prepare($sql);
+            $result = $stmtinsert->execute
+            ([$name, $email, $password]);
+            if($result){
+                echo 'Successfully saved.';
+            } else {
+                echo 'There were errors while saving the data.';
+            }
         }
         ?>
     </div>
@@ -29,7 +37,7 @@
         <form action="registration.php" method="post">
             <h1>Criar conta</h1>
             <h4>Seu nome</h4>
-            <input type="text" placeholder="Nome e sobrenome" name="name" required>
+            <input type="text" placeholder="Nome e sobrenome" name="username" required>
             <h4>Seu e-mail</h4>
             <input type="email" name="email" required>
             <h4>Senha</h4>
